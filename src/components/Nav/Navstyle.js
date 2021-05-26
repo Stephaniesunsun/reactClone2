@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import {GrTapeOption} from 'react-icons/gr';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {Link} from 'react-router-dom';
+import {GrTapeOption} from 'react-icons/gr';
+export const Navbar=styled.div`
 
-export const Navbar=styled.div``
+`
 export const RightLogo=styled.div`
     display:flex;
    padding-right:1em;
@@ -19,6 +20,9 @@ export const HamburgerMenu=styled(GiHamburgerMenu)`
         display:block;
     }
 `
+export const Homelink=styled(Link)`
+    cursor: pointer;
+`
 export const NavLogo=styled.div`
     display:flex;
     gap:0.5em;
@@ -27,6 +31,7 @@ export const NavLogo=styled.div`
     color:#f0efed;
 `
 export const NavContainer=styled.div`
+position:sticky;
     margin:1em auto auto auto;
     padding:0.2em;
     width:95%;
@@ -36,7 +41,6 @@ export const NavContainer=styled.div`
     display:flex;
     align-items:center;
     justify-content:space-between;
-    position: relative;
 `
 export const ExtendedNav=styled.div`
     background-color:#1a2456;
@@ -76,8 +80,13 @@ export const ListItem=styled(Link)`
     &:hover{
         color:#ff8b68;
     }
+    justify-content:space-around;
+    @media screen and (min-width:965px){
+        display:block;
+    }
 `
 export const Logo=styled(GrTapeOption)`
+    cursor: pointer;
 `
 export const Title=styled.h1`
     font-size:0.8rem;

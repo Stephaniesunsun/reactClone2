@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {AiOutlineShopping} from 'react-icons/ai';
-import {Navbar,NavLogo,NavContainer,Title,Logo,RightLogo,HamburgerMenu,
+import {Navbar,NavLogo,Homelink,NavContainer,Title,Logo,RightLogo,HamburgerMenu,
     ExtendedNav,
     ListWrapper,
     ListItem
@@ -9,7 +9,6 @@ import {IconContext} from 'react-icons/lib';
 
 
 function Nav(){
-    //add click hook
     const [click,setClick]=useState(false);
     function handleClick(e){
         setClick(!click);
@@ -18,10 +17,12 @@ function Nav(){
         <Navbar>
             <IconContext.Provider value={{color:'#f0efed'}}>
             <NavContainer>
-                <NavLogo>
-                    <Logo size={37}/>
-                    <Title>MONOGRAM</Title>
-                </NavLogo>
+                <Homelink to='/home'>
+                    <NavLogo>
+                        <Logo to='/home'size={37}/>
+                        <Title>MONOGRAM</Title>
+                    </NavLogo>
+                </Homelink>
                 <RightLogo>
                     <HamburgerMenu size={25} onClick={handleClick}/>
                     <AiOutlineShopping size={30}></AiOutlineShopping>
