@@ -2,4 +2,3 @@
 
 Not completed yet, keep updating!
 
-Original website: https://monogramcc.com/shop/
