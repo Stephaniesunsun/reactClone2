@@ -2,3 +2,4 @@
 
 Not completed yet, keep updating!
 
+Running script: ```npm start```
