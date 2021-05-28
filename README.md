@@ -2,4 +2,4 @@
 
 Not completed yet, keep updating!
 
-Original website: https://monogramcc.com/shop/
+Running script: ```npm start```
