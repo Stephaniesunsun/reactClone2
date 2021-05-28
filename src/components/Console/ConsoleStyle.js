@@ -7,8 +7,12 @@ export const ConsoleWrapper=styled.div`
     margin-right:auto;
     grid-template-columns:repeat(2, 1fr);
     grid-column-gap: 3vw;
+    >:nth-child(3){
+        grid-column:1/3;
+    }
 `
 export const SmallConsole=styled.div``
+
 export const ConsoleTitle=styled.h3`
     letter-spacing:1.5px;
     color: #1a2456;
@@ -33,7 +37,4 @@ export const ConsoleImg=styled.img`
     display: block;
     object-fit: cover;
     max-width: 100%;
-`
-export const BigConsole=styled.div`
-    grid-column:1/3;
 `

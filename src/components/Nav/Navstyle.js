@@ -3,7 +3,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {Link} from 'react-router-dom';
 import {GrTapeOption} from 'react-icons/gr';
 export const Navbar=styled.div`
-
+    
 `
 export const RightLogo=styled.div`
     display:flex;
@@ -31,13 +31,14 @@ export const NavLogo=styled.div`
     color:#f0efed;
 `
 export const NavContainer=styled.div`
-position:sticky;
-    margin:1em auto auto auto;
+    position:fixed;
+    top:1em;
+    left:2%;
+    z-index:1000;
     padding:0.2em;
     width:95%;
     height:3em;
     background-color:#1a2456;
-    z-index:100;
     display:flex;
     align-items:center;
     justify-content:space-between;
