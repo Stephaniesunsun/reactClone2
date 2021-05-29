@@ -21,7 +21,7 @@ const OwnConsole = ({hero,heroTitle,heroDes,products}) => {
                 {products.map((obj)=>{
                     return (
                     <ProductWrapper>
-                        <Pic src={obj.pic}></Pic>
+                        <Pic onMouseOver={e=>(e.currentTarget.src=obj.hoverpic)} onMouseOut={e=>(e.currentTarget.src=obj.pic)} src={obj.pic}></Pic>
                         <DesWrapper>
                             <Name>{obj.name}</Name>
                             <Price>{obj.price}</Price>

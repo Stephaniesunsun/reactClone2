@@ -47,7 +47,6 @@ export const Button=styled.button`
     background-color: #F5B7B1;
     color:#1a2456;
     border:none;
-    border-radius:30%;
     font-size:10px;
     padding:8px 20px;
     text-align:center;

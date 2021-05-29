@@ -15,7 +15,7 @@ const Console = ({console})=> {
             {console.map((obj)=>{
                 return(
                 <SmallConsole>
-                    <ConsoleImg src={obj.pic}></ConsoleImg>
+                    <ConsoleImg onMouseOver={e=>(e.currentTarget.src=obj.hoverpic)} onMouseOut={e=>(e.currentTarget.src=obj.pic)}src={obj.pic}></ConsoleImg>
                     <TitleWrapper>
                         <ConsoleTitle>{obj.product}</ConsoleTitle>
                         <ConsolePrice>{obj.price}</ConsolePrice>
