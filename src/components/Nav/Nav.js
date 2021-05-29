@@ -15,7 +15,7 @@ function Nav(){
     }
     return(
         <Navbar>
-            <IconContext.Provider value={{color:'#f0efed'}}>
+            <IconContext.Provider value={{color:'#F5B7B1'}}>
             <NavContainer>
                 <Homelink to='/home'>
                     <NavLogo>

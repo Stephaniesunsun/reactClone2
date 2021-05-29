@@ -3,15 +3,15 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {Link} from 'react-router-dom';
 import {GrTapeOption} from 'react-icons/gr';
 export const Navbar=styled.div`
-    
+   
 `
 export const RightLogo=styled.div`
-    display:flex;
+   display:flex;
    padding-right:1em;
    gap:0.5em;
    align-items:center;
    cursor: pointer;
-   color:#f0efed;
+   color:#F5B7B1;
 `;
 
 export const HamburgerMenu=styled(GiHamburgerMenu)`
@@ -28,7 +28,7 @@ export const NavLogo=styled.div`
     gap:0.5em;
     padding-left:0.5em;
     align-items:center;
-    color:#f0efed;
+    color:#F5B7B1;
 `
 export const NavContainer=styled.div`
     position:fixed;
@@ -75,7 +75,7 @@ export const ListWrapper=styled.ul`
 export const ListItem=styled(Link)`
     font-size:0.7em;
     letter-spacing:0.3em;
-    color:#f0efed;
+    color:#F5B7B1;
     text-decoration:none;
     display:${({click})=>(click?'block':'none')};
     &:hover{
@@ -92,4 +92,5 @@ export const Logo=styled(GrTapeOption)`
 export const Title=styled.h1`
     font-size:0.8rem;
     letter-spacing:2px;
+    text-decoration:none;
 `
