@@ -1,5 +1,5 @@
 # Recreate website with React
 
-Not completed yet, keep updating!
+All the links are unclickable besides Nav bar.
 
 Running script: ```npm start```
